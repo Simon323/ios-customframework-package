@@ -7,7 +7,7 @@ In Xcode
 
 ## Open-source
 
-In `Package.swift` use `target` in targets array
+1. In `Package.swift` use `target` in targets array
 
 ```swift
 let package = Package(
@@ -30,9 +30,12 @@ let package = Package(
 )
 ```
 
+2. Put source code into `Source` directory
+![Open Source](assets/open-source.png)
+
 ## Binary target
 
-In `Package.swift` use `binaryTarget` in targets array
+1. In `Package.swift` use `binaryTarget` in targets array
 
 ```swift
 let package = Package(
@@ -49,6 +52,10 @@ let package = Package(
     ]
 )
 ```
+
+2. Put xcframework output build in `Source` directory
+Do this operation by drag and drop build output from Finder to XCode file tree.
+![xcframework](assets/xcframework.png)
 
 ## Packages versioning
 Add git tag
